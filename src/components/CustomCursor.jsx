@@ -1,5 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useSpring,
+  useTransform,
+} from "framer-motion";
 import { useCursor } from "../context/CursorContext";
 
 const CustomCursor = () => {
@@ -29,8 +34,8 @@ const CustomCursor = () => {
   const scaleX = useTransform(stretch, (value) => value);
 
   const lastPos = useRef({
-    x: window.innerWidth / 2,
-    y: window.innerHeight / 2,
+    x: typeof window !== "undefined" ? window.innerWidth / 2 : 0,
+    y: typeof window !== "undefined" ? window.innerHeight / 2 : 0,
   });
 
   useEffect(() => {
@@ -47,9 +52,7 @@ const CustomCursor = () => {
 
       const dx = clientX - lastPos.current.x;
       const dy = clientY - lastPos.current.y;
-
       const distance = Math.hypot(dx, dy);
-
       const speed = Math.min(distance / 12, 1);
 
       stretch.set(1 + speed * 0.5);
@@ -57,10 +60,7 @@ const CustomCursor = () => {
       if (distance > 0.5) {
         angle.set(Math.atan2(dy, dx) * (180 / Math.PI));
       }
-<<<<<<< HEAD
-=======
 
->>>>>>> ba4f165 (Update portfolio components and about section)
       lastPos.current = {
         x: clientX,
         y: clientY,
@@ -87,7 +87,6 @@ const CustomCursor = () => {
     });
 
     window.addEventListener("mousedown", onDown);
-
     window.addEventListener("mouseup", onUp);
 
     document.documentElement.addEventListener("mouseleave", onLeave);
@@ -106,14 +105,9 @@ const CustomCursor = () => {
 
   return (
     <div
-<<<<<<< HEAD
       className={`pointer-events-none fixed inset-0 z-[100] hidden md:block transition-opacity duration-300 ${visible ? "opacity-100" : "opacity-0"
-        }`}>
-=======
-      className={`pointer-events-none fixed inset-0 z-[100] hidden md:block transition-opacity duration-300 ${
-        visible ? "opacity-100" : "opacity-0"
-      }`}>
->>>>>>> ba4f165 (Update portfolio components and about section)
+        }`}
+    >
       <motion.div
         className="cursor-dot pointer-events-none fixed left-0 top-0 h-1.5 w-1.5 rounded-full bg-accent"
         style={{
@@ -138,13 +132,16 @@ const CustomCursor = () => {
           width: isLink || isView ? 72 : isDown ? 28 : 40,
           height: isLink || isView ? 72 : isDown ? 28 : 40,
           backgroundColor:
-            isLink || isView ? "rgba(59,130,246,0.12)" : "rgba(59,130,246,0)",
+            isLink || isView
+              ? "rgba(59,130,246,0.12)"
+              : "rgba(59,130,246,0)",
         }}
         transition={{
           type: "spring",
           damping: 20,
           stiffness: 300,
-        }}>
+        }}
+      >
         {isView && (
           <span className="text-[10px] font-display uppercase tracking-widest text-white">
             {label || "View"}
@@ -156,3 +153,4 @@ const CustomCursor = () => {
 };
 
 export default CustomCursor;
+
