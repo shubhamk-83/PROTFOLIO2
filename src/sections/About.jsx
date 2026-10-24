@@ -2,13 +2,9 @@ import { motion } from "framer-motion";
 import SectionHeading from "../components/SectionHeading";
 import GlassCard from "../components/GlassCard";
 import AnimatedCounter from "../components/AnimatedCounter";
-
 import { fadeUp, viewportOnce } from "../animations/variants";
-
 import { ABOUT_STATS } from "../utils/data";
-
 import useParallax from "../hooks/useParallax";
-
 import myImg from "../assets/images/shubham.jpeg";
 
 function About() {
@@ -42,16 +38,16 @@ function About() {
                   height="1280"
                   loading="lazy"
                   decoding="async"
-                  className="h-[115%] w-full object-cover"
+                  className="h-full w-full object-cover object-center"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               </div>
             </GlassCard>
 
-            {/* Floating Card */}
+            {/* ================= FLOATING CARD ================= */}
 
-            <div className="absolute -bottom-6 -right-6 hidden md:block">
+            <div className="absolute -bottom-5 -right-4 z-10 hidden md:block">
               <GlassCard className="px-6 py-5">
                 <p className="font-display text-3xl font-bold text-accent-soft">
                   3+
@@ -79,7 +75,7 @@ function About() {
                 B.Tech Computer Science student at{" "}
                 <span className="font-medium text-accent">
                   Sagar Institute of Research & Technology (SIRT), Bhopal.
-                </span>
+                </span>{" "}
                 I enjoy building modern, responsive, and scalable web
                 applications using the MERN Stack.
               </p>
@@ -90,7 +86,7 @@ function About() {
                 <span className="text-ink">
                   AI Interview Preparation Platform
                 </span>
-                , <span className="text-ink">GreenCart</span>, , and multiple
+                , <span className="text-ink">GreenCart</span>, and multiple
                 frontend applications using React.js and Tailwind CSS.
               </p>
 
@@ -102,6 +98,7 @@ function About() {
                 engineers, and grow into a skilled Full Stack Developer.
               </p>
             </motion.div>
+
             {/* ================= STATS ================= */}
 
             <div className="grid grid-cols-2 gap-5">
