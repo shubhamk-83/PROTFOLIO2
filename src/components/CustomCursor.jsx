@@ -57,6 +57,10 @@ const CustomCursor = () => {
       if (distance > 0.5) {
         angle.set(Math.atan2(dy, dx) * (180 / Math.PI));
       }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ba4f165 (Update portfolio components and about section)
       lastPos.current = {
         x: clientX,
         y: clientY,
@@ -102,8 +106,14 @@ const CustomCursor = () => {
 
   return (
     <div
+<<<<<<< HEAD
       className={`pointer-events-none fixed inset-0 z-[100] hidden md:block transition-opacity duration-300 ${visible ? "opacity-100" : "opacity-0"
         }`}>
+=======
+      className={`pointer-events-none fixed inset-0 z-[100] hidden md:block transition-opacity duration-300 ${
+        visible ? "opacity-100" : "opacity-0"
+      }`}>
+>>>>>>> ba4f165 (Update portfolio components and about section)
       <motion.div
         className="cursor-dot pointer-events-none fixed left-0 top-0 h-1.5 w-1.5 rounded-full bg-accent"
         style={{
