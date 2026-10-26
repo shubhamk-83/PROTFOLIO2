@@ -333,29 +333,27 @@ export const EXPERIENCE = [
 export const EDUCATION = [
   {
     type: "education",
-    title: "Bachelor of Technology (B.Tech) - Computer Science",
+    title: "Bachelor of Technology (B.Tech) in Computer Science",
     place: "Sagar Institute of Research & Technology (SIRT), Bhopal",
-    period: "2023 - 2027",
+    period: "2023 – 2027",
     detail:
-      "Currently pursuing B.Tech in Computer Science. Building strong foundations in Full Stack Development, Data Structures & Algorithms, Database Management Systems, Computer Networks, Operating Systems, and Artificial Intelligence.",
+      "Pursuing a B.Tech in Computer Science with a focus on full stack development and core CS fundamentals: Data Structures & Algorithms, DBMS, Computer Networks, Operating Systems, and Artificial Intelligence.",
   },
-
+  {
+    type: "education",
+    title: "Higher Secondary (Class XII) – PCM",
+    place: "Bihar School Examination Board (BSEB)",
+    period: "2022 – 2023",
+    detail:
+      "Completed Class XII with Physics, Chemistry, and Mathematics, building the analytical and problem-solving base for engineering.",
+  },
   {
     type: "certification",
     title: "MERN Stack Development",
-    place: "Self Learning",
-    period: "2024 - Present",
+    place: "Self-Learning & Project-Based",
+    period: "2024 – Present",
     detail:
-      "Hands-on experience building full-stack web applications using MongoDB, Express.js, React.js, Node.js, JWT Authentication, Cloudinary, Stripe, and REST APIs.",
-  },
-
-  {
-    type: "learning",
-    title: "Data Structures & Algorithms",
-    place: "LeetCode | C++",
-    period: "2025 - Present",
-    detail:
-      "Regularly solving coding problems and improving problem-solving skills for software engineering interviews.",
+      "Building full stack web applications with MongoDB, Express.js, React.js, and Node.js. Experience with JWT authentication, REST API design, Cloudinary media uploads, and Stripe payment integration.",
   },
 ];
 

@@ -109,7 +109,7 @@ function Hero() {
 
             <MagneticButton
               as="a"
-              href="https://drive.google.com/file/d/1mpwx6yrrFeHKTPHW8IYhTOGfW8dx77Vd/view?usp=sharing"
+             href="https://drive.google.com/file/d/19ATiEf-X7aP7EsGCbWy3XpFI21RX06XY/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="glass inline-flex items-center gap-2 rounded-full border border-line px-7 py-3.5 text-sm font-semibold text-ink transition-colors hover:border-accent/50">
