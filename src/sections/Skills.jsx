@@ -33,11 +33,10 @@ function Skills() {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 ${
-                activeCategory === category
+              className={`rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 ${activeCategory === category
                   ? "bg-accent text-white shadow-glow"
                   : "glass border border-line text-mute hover:border-accent/40 hover:text-ink"
-              }`}
+                }`}
             >
               {category}
             </button>

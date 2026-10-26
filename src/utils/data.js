@@ -343,7 +343,7 @@ export const EDUCATION = [
     type: "education",
     title: "Higher Secondary (Class XII) – PCM",
     place: "Bihar School Examination Board (BSEB)",
-    period: "2022 – 2023",
+    period: "2021 – 2023",
     detail:
       "Completed Class XII with Physics, Chemistry, and Mathematics, building the analytical and problem-solving base for engineering.",
   },
