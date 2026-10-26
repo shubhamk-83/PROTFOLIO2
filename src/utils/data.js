@@ -428,6 +428,12 @@ export const TESTIMONIALS = [
     name: "Arnav",
     role: "Friend & Full Stack Developer",
   },
+  {
+    quote:
+      "Shubham writes clean, well-structured code and has a sharp eye for UI details. He's always looking for ways to improve the user experience, and his problem-solving skills make him a dependable developer and a great teammate to work with.",
+    name: "Shivam Singh",
+    role: "Mern Stack Developer",
+  },
 ];
 
 export const MARQUEE_WORDS = [
